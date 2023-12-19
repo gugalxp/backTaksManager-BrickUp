@@ -8,6 +8,11 @@
   - REST
 - **Banco de Dados:**
   - MySQL
+- **Front-end:**
+  - React
+  - Ant Design (Opcional)
+  - Redux
+  - Redux-Saga
 
  ## Comando para criar a tabela e as colunas
  *(ps: Antes, garanta ter criado o banco de dados antes, e use-o)*
