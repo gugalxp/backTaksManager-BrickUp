@@ -8,7 +8,22 @@
   - REST
 - **Banco de Dados:**
   - MySQL
- 
+
+ ## Comando para criar a tabela e as colunas
+ *(ps: Antes, garanta ter criado o banco de dados antes, e use-o)*
+
+**Comando:**
+```
+CREATE TABLE tasks (
+  id VARCHAR(36) NOT NULL,
+  title VARCHAR(255) NOT NULL,
+  completed BOOLEAN NOT NULL,
+  photoPath LONGBLOB,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+)
+```
 ## Endpoints do Controller
 
 ### GET /tasks
